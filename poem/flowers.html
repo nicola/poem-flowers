@@ -5,6 +5,23 @@
 <body>
   <script type="text/javascript" src="tools/d3/d3.min.js"></script>
   <script type="text/javascript">
+
+  var color;
+
+  d3.select("#field")
+    .on('mouseover', function(d, i) {
+      if (color === false) {
+        d3.selectAll("path")
+          .transition()
+          .duration(1000)
+          .style("stroke", function(d, i) {
+            // Finding the most beautiful colors
+            return beautiful_color();
+        });
+        color = true;
+      }
+    })
+
   function start_touching(d, i) {
     var flower = d3.select(this);
     flower
