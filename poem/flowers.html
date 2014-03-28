@@ -4,14 +4,27 @@
 </head>
 <body>
 
-
+  <div id="field"></div>
   
   <script type="text/javascript" src="tools/d3/d3.min.js"></script>
   <script type="text/javascript">
 
-  var color;
+  var field, flowers, w, h, d, n, dx, color, touching;
+  color = false;
+  w = 960;
+  h = 600;
+  d = 9;
+  n = 19;
+  dx = Math.min(w / (n + .5), h / (d + .5));
+  w = dx * (n + .5);
+  h = dx * (d + .5);
 
-  d3.select("#field")
+  // Preparing the field
+  field =
+    d3.select("#field")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", h)
     .on('mouseover', function(d, i) {
       if (color === false) {
         d3.selectAll("path")
@@ -24,6 +37,20 @@
         color = true;
       }
     })
+
+  // Grow flowers
+  flowers =
+    field.selectAll("g")
+    .data(d3.range(d * n).map(function(i) { return [1 + i % n, 1 + ~~(i / n)]; }))
+    .enter()
+    .append("g")
+    .attr("transform", function(d, i) { return "translate(" + [d[0] * dx, d[1] * dx] + ")"; });
+
+  flowers
+    .append("path")
+    .on("mouseover", start_touching)
+    .on("mouseout", stop_touching)
+    .style("stroke", "#000");
 
   function start_touching(d, i) {
     var flower = d3.select(this);
