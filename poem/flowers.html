@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="flowers">
 <head>
+  <meta charset="utf-8">
+  <style>
+    body { margin: 1em auto; width: 960px; }
+    #field { margin: 2em 0; }
+    line, path { stroke: #000; fill: none; }
+  </style>
 </head>
 <body>
 
   <div id="field"></div>
-  
+
   <script type="text/javascript" src="tools/d3/d3.min.js"></script>
   <script type="text/javascript">
 
-  var field, flowers, w, h, d, n, dx, color, touching;
+  function gcd(a, b) { var w; while (b !== 0) { w = a % b; a = b; b = w; } return a; }
+  function random_int (min, max) { return Math.floor(Math.random() * (max - min + 1)) + min;}
+
+  var line, field, flowers, w, h, d, n, dx, color, touching;
   color = false;
   w = 960;
   h = 600;
@@ -18,6 +27,13 @@
   dx = Math.min(w / (n + .5), h / (d + .5));
   w = dx * (n + .5);
   h = dx * (d + .5);
+
+  // Preparing lines
+  line =
+    d3.svg.line()
+    .interpolate("cardinal-closed")
+    .x(function(d) { return d[0]; })
+    .y(function(d) { return d[1]; })
 
   // Preparing the field
   field =
@@ -48,6 +64,7 @@
 
   flowers
     .append("path")
+    .attr("d", handcraft_flower)
     .on("mouseover", start_touching)
     .on("mouseout", stop_touching)
     .style("stroke", "#000");
@@ -75,7 +92,28 @@
     }
     return "#"+color;
   }
+
+  function handcraft_flower(d) {
+    var i, p, q, k, period;
+
+    i = gcd.apply(null, d);
+    p = Math.round(d[0] / i);
+    q = Math.round(d[1] / i), k = p / q;
+    period = (p & q & 1 ? 1 : 2) * Math.PI * q;
+
+    return line(d3.range(0, period + Math.PI / 50, Math.PI / 50).map(function(theta) {
+      var r = (dx - 5) * Math.cos(k * theta) / 2;
+      return [r * Math.cos(theta), r * Math.sin(theta)];
+    }));
+  }
+  
   function start_touching(d, i) {
+    if (touching === i) return;
+    touching = i;
+    d[0] = random_int(1, 11);
+    d[1] = random_int(1, 11);
+    if (d[0] == d[1]) d[1]++; // deleting ugly flowers
+
     var flower = d3.select(this);
     flower
      .transition()
@@ -84,9 +122,11 @@
      .attr("d", handcraft_flower)
      .style("stroke", "#ccc");
   }
+  
   function stop_touching(d, i) {
     // Please touch me again
   }
+
   </script>
 </body>
 </html>
