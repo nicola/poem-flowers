@@ -67,5 +67,14 @@ Where as soon as we play with `k`, for example `k = 2/1` we get the second flowe
 
 ![k2](documentation/k2.png?raw=true "k2")
 
+## Want to contribute?
+
+Clone the repo and install dependencies.
+
+```bash
+$ cd poem
+$ bower install
+```
+
 
 ### The End
