@@ -6,6 +6,8 @@ A love poem that mix visualization art and code poetry. Probably the first poem 
 - [Read the Code](https://github.com/nicola/flowers-poem/tree/poem) (in its readable poetic form)
 - [Read the Poem](https://github.com/nicola/flowers-poem/commits/poem) (in the commit history)
 
+![Identity flower](documentation/cover.jpg?raw=true "Identity flower")
+
 ## The Poem
 
 The poem is about preparing a field to grow flowers and making sure that each flower has a beautiful color. These flowers  will shine when seen by the beloved and turn gray when touched. They keep asking to be touched again.
