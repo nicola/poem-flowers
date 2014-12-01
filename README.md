@@ -30,9 +30,7 @@ e146d2c Please touch me again.
 
 Every commit has a meaningful code attached to it.
 
-For example [`e023bd0 Touch me you'll never stop`](https://github.com/nicola/flowers-poem/commit/e023bd0b0006470fc2d1df47ace50c7cd0901161) has attached the following new code:
-
-
+[`e023bd0 Touch me you'll never stop`](https://github.com/nicola/flowers-poem/commit/e023bd0b0006470fc2d1df47ace50c7cd0901161)
 ```diff
 + function stop_touching(d, i) {
 
