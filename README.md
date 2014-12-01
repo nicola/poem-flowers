@@ -6,6 +6,8 @@ A love poem that mix visualization art and code poetry. Probably the first poem 
 - [Read the Code](https://github.com/nicola/flowers-poem/blob/poem/poem/flowers.html) (in its readable poetic form)
 - [Read the Poem](https://github.com/nicola/flowers-poem/commits/poem) (in the commit history)
 
+Inspired and based on [Jason Davies work](http://www.jasondavies.com/rhodonea/)
+
 ![Visualization in black](documentation/cover.jpg?raw=true "Visualization in black")
 
 ## The Poem
