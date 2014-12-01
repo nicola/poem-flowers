@@ -1,0 +1,28 @@
+{
+  "name": "9*19 flowers",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nicola/flowers-poem",
+  "description": "9*19 flowers represents 171 flowers mathematically generated, a double artistic expression that combines interactive visualization and code poetry.",
+  "keywords": [
+    "art",
+    "poetry",
+    "flowers"
+  ],
+  "authors": [
+    "me@nicolagreco.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tools",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.15",
+    "d3": "~3.4.4"
+  }
+}
+
