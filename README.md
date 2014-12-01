@@ -51,13 +51,13 @@ For example [`e023bd0 Touch me you'll never stop`](https://github.com/nicola/flo
 2. When flowers are touched they get colourful. When a single one is touched, it changes shape.
 
 Simple colorful flower
-![flower3](project_images/flower3.png?raw=true "flower3")
+![flower3](documentation/flower3.png?raw=true "flower3")
 
 Gray flower when touched
-![flower2](project_images/flower2.png?raw=true "flower2")
+![flower2](documentation/flower2.png?raw=true "flower2")
 
 Set of colourful flowers
-![flower1](project_images/flower1.png?raw=true "flower1")
+![flower1](documentation/flower1.png?raw=true "flower1")
 
 The most beautiful part of this visualisation is watching them changing shape.
 
@@ -75,11 +75,11 @@ where r = cos(kt)
 
 As soon as we land in the visualisation there is a diagonal line towards the matrix. When the column and row number are the same, `k = 1` and therefore we get the identity flower, considered in the code to be *the ugly flower* that the lover deletes. It looks like this:
 
-![Identity flower](project_images/identity.png?raw=true "Identity flower")
+![Identity flower](documentation/identity.png?raw=true "Identity flower")
 
 Where as soon as we play with `k`, for example `k = 2/1` we get the second flower.
 
-![k2](project_images/k2.png?raw=true "k2")
+![k2](documentation/k2.png?raw=true "k2")
 
 
 ### The End
