@@ -2,9 +2,9 @@
 
 A love poem that mix visualization art and code poetry. Probably the first poem written in git commits.
 
-- See the Visualization (and iteract with it)
-- Read the Code (in its readable poetic form)
-- Read the Poem (in the commit history)
+- [See the Visualization](https://nicola.github.io/flowers-poem) (and interact with it)
+- [Read the Code](https://github.com/nicola/flowers-poem/tree/poem) (in its readable poetic form)
+- [Read the Poem](https://github.com/nicola/flowers-poem/commits/poem) (in the commit history)
 
 ## The Poem
 
