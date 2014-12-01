@@ -6,7 +6,7 @@ A love poem that mix visualization art and code poetry. Probably the first poem 
 - [Read the Code](https://github.com/nicola/flowers-poem/tree/poem) (in its readable poetic form)
 - [Read the Poem](https://github.com/nicola/flowers-poem/commits/poem) (in the commit history)
 
-![Identity flower](documentation/cover.jpg?raw=true "Identity flower")
+![Visualization in black](documentation/cover.jpg?raw=true "Visualization in black")
 
 ## The Poem
 
@@ -44,14 +44,7 @@ Every commit has a meaningful code attached to it.
 1. Colors are randomly generated. The function `beautiful_color()` makes sure that he lover handcrafts the most beautiful flowers.
 2. When flowers are touched they get colourful. When a single one is touched, it changes shape.
 
-Simple colorful flower
-![flower3](documentation/flower3.png?raw=true "flower3")
-
-Gray flower when touched
-![flower2](documentation/flower2.png?raw=true "flower2")
-
-Set of colourful flowers
-![flower1](documentation/flower1.png?raw=true "flower1")
+![Flower story](documentation/flowerstory.png?raw=true "Flower story")
 
 
 ### The mathematics behind the flowers
