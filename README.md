@@ -1,23 +1,18 @@
-This love poem recreates a **double artistic experience***: the visualisation is a **canvas** and the code behind is **poetry**.
+# POEM: 9*19 Flowers
 
-- See the Visualization
-- Read the Code
-- Read the Poem
+A love poem that mix visualization art and code poetry. Probably the first poem written in git commits.
 
-## How to interpret
-- enjoy the visualisation by staring (static) at it or explore it by interacting (dynamic)
-- read the code and interpret it, since it is written in a **readable poetic form**
-- commit history is part of the poem
+- See the Visualization (and iteract with it)
+- Read the Code (in its readable poetic form)
+- Read the Poem (in the commit history)
 
 ## The Poem
 
-The poem is what I aim to represent. The act of love when preparing a field to grow flowers and making sure that each flower has a beautiful color. The flowers themselves will shine when seen by the beloved and when touched new ones will grow and will ask to be touched again.
+The poem is about preparing a field to grow flowers and making sure that each flower has a beautiful color. These flowers  will shine when seen by the beloved and turn gray when touched. They keep asking to be touched again.
 
-Since in a machine virtual world everything is possible and nothing is real, there is no field from flowers to grow, but instead the lover will take lines and collect the best colors to handcraft flowers.
+Since in a computer virtual world everything is possible and nothing is real, the lover will *handcraft* flowers from *maths and lines*.
 
-#### About the commit history
-
-This is probably the first ever poem in git commits. It is possible to read the poem in the commit history in the [poem branch](https://github.com/nicolagreco/devart-template/tree/poem). Here is reported:
+It is possible to read the poem in the commit history in the [poem branch](https://github.com/nicola/flowers-poem/commits/poem).
 
 ```bash
 $ git log --format="%C(yellow)%h%Creset %Cgreen%s%Creset%n%b"
@@ -33,9 +28,9 @@ e023bd0 Touch me you'll never stop
 e146d2c Please touch me again.
 ```
 
-Every commit has a meaningful change in code attached to it.
+Every commit has a meaningful code attached to it.
 
-For example [`e023bd0 Touch me you'll never stop`](https://github.com/nicola/flowers-poem/commit/e023bd0b0006470fc2d1df47ace50c7cd0901161) will have attached the following new code:
+For example [`e023bd0 Touch me you'll never stop`](https://github.com/nicola/flowers-poem/commit/e023bd0b0006470fc2d1df47ace50c7cd0901161) has attached the following new code:
 
 
 ```diff
@@ -44,10 +39,9 @@ For example [`e023bd0 Touch me you'll never stop`](https://github.com/nicola/flo
 + }
 ```
 
-
 ## The Visualization
 
-1. Colors are randomly generated, the function `beautiful_color()` makes sure that he lover handcrafts the most beautiful flowers.
+1. Colors are randomly generated. The function `beautiful_color()` makes sure that he lover handcrafts the most beautiful flowers.
 2. When flowers are touched they get colourful. When a single one is touched, it changes shape.
 
 Simple colorful flower
@@ -59,7 +53,6 @@ Gray flower when touched
 Set of colourful flowers
 ![flower1](documentation/flower1.png?raw=true "flower1")
 
-The most beautiful part of this visualisation is watching them changing shape.
 
 ### The mathematics behind the flowers
 
