@@ -8,7 +8,7 @@ A love poem that mix visualization art and code poetry. Probably the first poem 
 
 Inspired and based on [Jason Davies work](http://www.jasondavies.com/rhodonea/)
 
-![Visualization in black](documentation/cover.jpg?raw=true "Visualization in black")
+[![Visualization in black](documentation/cover.jpg?raw=true "Visualization in black")](https://nicola.github.io/flowers-poem)
 
 ## The Poem
 
