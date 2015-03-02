@@ -19,6 +19,12 @@ Since in a computer virtual world everything is possible and nothing is real, th
 It is possible to read the poem in the commit history in the [poem branch](https://github.com/nicola/flowers-poem/commits/poem).
 
 ```
+$ git fetch origin poem
+$ git checkout poem
+$ git log --format="%s"
+
+or
+
 $ git log --format="%C(yellow)%h%Creset %Cgreen%s%Creset%n%b"
 
 ea814f4 POEM: 9*19 flowers
