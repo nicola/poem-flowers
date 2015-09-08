@@ -49,7 +49,7 @@ Every commit has a meaningful code attached to it.
 
 ## The Visualization
 
-1. Colors are randomly generated. The function `beautiful_color()` makes sure that he lover handcrafts the most beautiful flowers.
+1. Colors are randomly generated. The function `beautiful_color()` makes sure that the lover handcrafts the most beautiful flowers.
 2. When flowers are touched they get colourful. When a single one is touched, it changes shape.
 
 ![Flower story](documentation/flowerstory.png?raw=true "Flower story")
@@ -57,7 +57,7 @@ Every commit has a meaningful code attached to it.
 
 ### The mathematics behind the flowers
 
-The flowers are generated mathematically. The first grid that appears is a matrix, where flowers are generated using using the value of their column and row positions.
+The flowers are generated mathematically. The first grid that appears is a matrix, where flowers are generated using the value of their column and row positions.
 
 The mathematical formula is very simple. I define curves to be 
 
